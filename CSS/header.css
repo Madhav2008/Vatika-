@@ -1,0 +1,168 @@
+html::-webkit-scrollbar{
+  width:1.5rem;
+}
+
+html::-webkit-scrollbar-track{
+background:linear-gradient(#222635, #ffffff);
+}
+
+html::-webkit-scrollbar-thumb{
+  background:linear-gradient(#222635, #ffffff);
+}
+#header{
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222635;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.containers{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_ico{
+  display: block;
+  width: 40px;
+  cursor: pointer;
+}
+.main_nav {
+  float: right;
+}
+.main_nav ul{
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+.main_nav ul li{
+  float: left;
+  margin: 0 0 0 30px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  overflow: hidden;
+}
+.main_nav ul li a {
+  color: white;
+  display: block;
+  line-height: 1.4;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+.main_nav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.main_nav ul li a::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.main_nav ul li a:hover{background-color: #323c4e;}
+/* .main_nav ul li:hover{right: 0;} */
+/* .main_nav ul li:hover a:before{left: 0;}
+.main_nav ul li:hover a:after{right: 0;} */
+
+/*This Media Query use for iPad Portrait View*/
+@media only screen and (min-width:768px) and (max-width:991px){
+  .main_nav ul li{ margin: 0 0 0 15px; font-size: 16px; }
+
+}
+
+@media screen and (min-width: 768px){
+  .nav_ico{
+    display: none;
+  } 
+}
+/*This Media Query use for Mobile View*/
+@media screen and (max-width: 767px){
+  .nav_ico{ 
+    display: block;
+    position: relative;
+    z-index: 10;
+  } 
+  .main_nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background: #222635;
+    z-index: 5;
+    height: calc(100vh - -100px);
+    width: calc(100% - 80px);
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+  }
+  .main_nav ul li {
+    float: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid;
+    text-align: center;
+  }
+  .main_nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+  } 
+  .main_nav:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #2226356c;
+  }
+  .main_nav.active{
+    transform: translateX(0%);
+  }
+  .main_nav.active:after {
+    width: 1000%;
+  }
+}
+
+/* background */
+
+.ournumbers100 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.863)), url(../ASSETS/coaching.png);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size:30px;
+}
+.ournumbers1001 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.863)), url(../ASSETS/coaching.png);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size:50px;
+}
