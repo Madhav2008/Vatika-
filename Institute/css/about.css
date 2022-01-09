@@ -139,9 +139,9 @@ form {
     flex-direction: column;
 }
 
-input {
+input,select{
     outline: none;
-    margin: 8px;
+    margin: 6px;
     width: 350px;
     height: 30px;
     border: none;
@@ -149,12 +149,17 @@ input {
     padding-left: 15px;
 }
 
-input:nth-child(5) {
-    width: 350px;
-    height: 60px;
+select{
+    margin-bottom: 2rem;
 }
 
-input:nth-child(7) {
+input:nth-child(5) {
+    width: 350px;
+    height: 30px;
+}
+
+input:nth-child(8) {
+    margin-top: 3rem;
     padding: 0;
     width: 150px;
     font-size: 20px;
@@ -166,12 +171,11 @@ input:nth-child(7) {
     cursor: pointer;
 }
 
-.contact {
+.content_1{
+    grid-area: content;
+    background: #efefef;
+    border-radius: 10px;
     display: flex;
-    width: 50%;
-}
-
-.contact1,
-.contact2 {
-    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
