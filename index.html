@@ -695,8 +695,9 @@
                 <!-- <div class="testi-avatar"><img src="ASSETS/student-3.png"></div> -->
                 <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                 <div class="testimonials-text">
-                  <p>This Institute had helped me alot in cracking DU-JAT entrance exam...
-                    Thank you Vatika Institute, Thank you Priya Mam 🙏🙏
+                  <p>Having a lot of experience and a wonderful teaching style.They can cover the syllabus previous than
+                    given time. Surely they make you such perfect in all of your subjects and topics that there is no
+                    chance remains for mistake. Best Institute! 👍👌
                   </p>
                   <div class="testimonials-avatar">
                     <h3>Ankit Chopra</h3>
@@ -747,15 +748,15 @@
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-medium tracking-widest text-2xl text-sm text-yellow-500 mb-4 text-white">Our
             Programs</h2>
-            <nav class="list-none">
-              <li class="mb-2">
-                <a target="blank" href="index.html" style="font-size: medium;"
-                  class="text-white hover:text-yellow-500 mt-8">Vatika</a>
-              </li>
-              <li class="mb-2">
-                <a target="blank" href="PlaySchool/home.html" style="font-size: medium;"
-                  class="text-white hover:text-yellow-500 mt-8">Vatika Play Station</a>
-              </li>
+          <nav class="list-none">
+            <li class="mb-2">
+              <a target="blank" href="index.html" style="font-size: medium;"
+                class="text-white hover:text-yellow-500 mt-8">Vatika</a>
+            </li>
+            <li class="mb-2">
+              <a target="blank" href="PlaySchool/home.html" style="font-size: medium;"
+                class="text-white hover:text-yellow-500 mt-8">Vatika Play Station</a>
+            </li>
             <li class="mb-2">
               <a target="blank" href="Institute/home.html" style="font-size: medium;"
                 class="text-white hover:text-yellow-500">Vatika Institute For Advanced Studies</a>
@@ -872,6 +873,42 @@
   </hr>
 
   <!-- Footer End -->
+
+  <!-- Cookie Consent Box Start-->
+
+  <link rel="stylesheet" type="text/css" href="CSS/Consent_Box.css" />
+
+  <div class="wrapper">
+    <center><img src="ASSETS/cookie.png" alt=""></center>
+    <div class="content">
+      <header style="color: white;">Cookies Consent</header>
+      <p>This website use cookies to ensure you get the best experience on our website.</p>
+      <div class="buttons">
+        <button class="item">I understand</button>
+        <a href="HTML/Privacy-Policy.html" class="item" style="font-size: 17px;">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cookieBox = document.querySelector(".wrapper"),
+    acceptBtn = cookieBox.querySelector("button");
+
+    acceptBtn.onclick = ()=>{
+      //setting cookie for 1 month, after one month it'll be expired automatically
+      document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+      if(document.cookie){ //if cookie is set
+        cookieBox.classList.add("hide"); //hide cookie box
+      }else{ //if cookie not set then alert an error
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
+    }
+    let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+  </script>
+
+  <!-- Cookie Consent Box End -->
 
 </body>
 
