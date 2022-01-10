@@ -60,6 +60,11 @@
             </div>
         </main>
 
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
+                      window.location='#';}"></iframe>
         <main>
             <div class="container1">
                 <div class="cover2"></div>
@@ -77,9 +82,8 @@
                   onsubmit="submitted=true"
                   method="POST"
                 >
-                  <input type="text" placeholder="Name" name="entry.8474588"/><br/>
-                  <input type="tel" placeholder="Phone" name="entry.1904956316"/><br/>
-                  <!-- <input type="text" placeholder="Class" name=""><br> -->
+                  <input type="text" placeholder="Name" name="entry.8474588" required/><br/>
+                  <input type="tel" pattern="^\d{10}$" placeholder="Phone" name="entry.1904956316" required/><br/>
                   <label for="subject"></label>
 
                   <select name="entry.1917937880" id="subject">
@@ -125,11 +129,6 @@
         </div>
       </main>
 
-      <script type="text/javascript">
-            var submitted = false;
-        </script>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
-            window.location='';}"></iframe>
          
       <!-- <div class="container2">
             <div class="box2">
