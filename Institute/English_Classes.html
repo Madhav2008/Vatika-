@@ -83,11 +83,11 @@
                   onsubmit="submitted=true"
                   method="POST"
                 >
-                  <input type="text" placeholder="Name" name="entry.8474588"/><br/>
-                  <input type="tel" placeholder="Phone"  pattern="^\d{10}$" name="entry.1904956316"/><br/>
-                  <input type="text" placeholder="Email" name="entry.1117339491"><br>
+                  <input type="text" placeholder="Name" name="entry.8474588" required/><br/>
+                  <input type="tel" placeholder="Phone"  pattern="^\d{10}$" name="entry.1904956316" required><br/>
+                  <input type="text" placeholder="Email" name="entry.1117339491" pattern="abc@gmail.com" required><br>
                   
-                  <select name="entry.1424035066" id="class">
+                  <select name="entry.1424035066" id="class" required>
                     <option value="" disabled selected hidden>Choose your class</option>
                     <option value="Nursery">Nursery</option>
                     <option value="Prep">Prep</option>
