@@ -26,6 +26,14 @@ main {
 .cover1 {
     grid-area: cover;
     height: 60vh;
+    background-image: url('../images/home-img.svg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover2 {
+    grid-area: cover;
+    height: 60vh;
     background-image: url('../images/contact-img.svg');
     background-size: cover;
     background-position: center center;
