@@ -468,5 +468,6 @@ body {
 #preloader {
 	background: #000;
 	height: 100vh;
-	width: 100%;position: fixed;
+	width: 100%;
+	position: fixed;
 }
