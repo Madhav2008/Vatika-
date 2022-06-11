@@ -466,5 +466,5 @@ body {
 /* Move To Top End */
 
 #preloader {
-	background: #000;
+	background: #000;height: 100vh;
 }
